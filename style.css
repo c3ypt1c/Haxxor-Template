@@ -1,0 +1,79 @@
+@font-face {
+    font-family: DejaVuSansMono;
+    src: url(DejaVuSansMono.ttf);
+}
+
+@font-face {
+	font-family: DejaVuSerif;
+	src: url(DejaVuSerif.ttf);
+}
+
+@font-face {
+	font-family: DejaVuSerifBold;
+	src: url(DejaVuSerif-Bold.ttf);
+}
+
+body {
+	margin-left:30px;
+	margin-right:30px;
+	background-color: black;
+	color:white;
+	transition: all 1s linear;
+	font-family: DejaVuSansMono;
+}
+
+.Title {
+	font-size:3em;
+	display: inline-block;
+	z-index: 1;
+	background-color: black;
+	padding-left: 10px;
+	padding-right: 10px;
+	overflow-x: hidden;
+}
+
+.Hacker {
+	position: absolute;
+	top:10px;
+	left:0;
+	display: inline-block;
+	overflow: hidden;
+	/* background-color: white; */
+	background-image: url(line.png);
+	background-repeat: repeat-x;
+	
+	height: 1em;
+	margin: none;
+	padding: none;
+	z-index: -999;
+	animation-duration: 1s;
+	animation-name: ll;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes ll {
+	0% {
+		left:0;
+		width: calc(100% + 0px);
+	}
+	100% {
+		left:-128px;
+		width: calc(100% + 128px);
+	}
+}
+
+.ContentWrapper {
+	font-family: DejaVuSerif;
+	margin-top: 20px;
+}
+
+.Bold {
+	font-family: DejaVuSerifBold;
+}
+@media (max-width:350px) {
+	.Hacker {
+		/*float:left;
+		 background-color: red; /*
+	}
+}
