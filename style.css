@@ -18,7 +18,7 @@ body {
 	margin-right:30px;
 	background-color: black;
 	color:white;
-	transition: all 1s linear;
+	transition: all 1s ease-out;
 	font-family: DejaVuSansMono;
 }
 
@@ -39,7 +39,7 @@ body {
 	display: inline-block;
 	overflow: hidden;
 	/* background-color: white; */
-	background-image: url(line.png);
+	background-image: url(gray_line.png);
 	background-repeat: repeat-x;
 	
 	height: 1em;
@@ -66,14 +66,26 @@ body {
 .ContentWrapper {
 	font-family: DejaVuSerif;
 	margin-top: 20px;
+	margin-left: 20px;
 }
 
 .Bold {
 	font-family: DejaVuSerifBold;
 }
+
 @media (max-width:350px) {
+	body {
+		margin-left:5px;
+		margin-right:5px;
+	}
+
 	.Hacker {
 		/*float:left;
-		 background-color: red; /*
+		 background-color: red; */
 	}
+
+	.ContentWrapper {
+
+	}
+
 }
