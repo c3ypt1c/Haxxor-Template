@@ -20,6 +20,7 @@ body {
 	color:white;
 	transition: all 1s ease-out;
 	font-family: DejaVuSansMono;
+	font-size: 125%;
 }
 
 .Title {
@@ -69,11 +70,31 @@ body {
 	margin-left: 20px;
 }
 
+.ContentWrapper div {
+	margin-top: 10px;
+}
+
 .Bold {
 	font-family: DejaVuSerifBold;
 }
 
-@media (max-width:350px) {
+.Small {
+	font-size: 0.65em;
+}
+
+a {
+	color:lightblue;
+}
+
+a:hover {
+	color:white;
+}
+
+a:followed {
+	color:lightgreen;
+}
+
+@media (max-width:27em) {
 	body {
 		margin-left:5px;
 		margin-right:5px;
